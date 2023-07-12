@@ -31,22 +31,22 @@
             key-positions = <19 21>;
         };
 
-        new_combo {
+        left_control {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <16 15>;
         };
 
-        new_combo {
+        left_gui {
             bindings = <&kp LEFT_GUI>;
             key-positions = <15 14>;
         };
 
-        new_combo {
+        left_alt {
             bindings = <&kp LEFT_ALT>;
             key-positions = <13 14>;
         };
 
-        new_combo {
+        delete {
             bindings = <&kp DELETE>;
             key-positions = <14 16>;
         };
