@@ -63,11 +63,10 @@
 
             #binding-cells = <2>;
             hold-trigger-key-positions = <6 18 30 31 19 7 8 20 32 33 21 9 10 22 34 23 11 35>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <149>;
             flavor = "balanced";
-            global-quick-tap;
             hold-trigger-on-release;
-            quick-tap-ms = <175>;
+            quick-tap-ms = <(-1)>;
         };
         CapsWord: CapsWord {
             compatible = "zmk,behavior-caps-word";
