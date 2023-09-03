@@ -66,6 +66,12 @@
             tapping-term-ms = <140>;
             flavor = "hold-preferred";
         };
+        CapsWord: CapsWord {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPSWORD";
+            #binding-cells = <0>;
+            continue-list = <UNDERSCORE BACKSPACE DELETE>;
+        };
     };
 
     keymap {
@@ -79,10 +85,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none                         &kp Q  &kp W                   &kp E  &kp R      &kp T          &kp Y       &kp U      &kp I    &kp O                  &kp P  &kp LEFT_BRACKET
-&none                         &kp A  &kp S                   &kp D  &kp F      &kp G          &kp H       &kp J      &kp K    &kp L        &lt 2 SEMICOLON           &kp SQT
-&none  &homeRowModLeft LEFT_SHIFT Z  &kp X                   &kp C  &kp V      &kp B          &kp N       &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH             &none
-                                            &kp LA(LC(LG(LSHIFT)))  &mo 3  &kp SPACE    &lt 1 ENTER  &kp ESCAPE    &kp TAB
+     &none                         &kp Q  &kp W                   &kp E  &kp R      &kp T          &kp Y       &kp U      &kp I    &kp O                  &kp P  &kp LEFT_BRACKET
+&caps_word                         &kp A  &kp S                   &kp D  &kp F      &kp G          &kp H       &kp J      &kp K    &kp L        &lt 2 SEMICOLON           &kp SQT
+     &none  &homeRowModLeft LEFT_SHIFT Z  &kp X                   &kp C  &kp V      &kp B          &kp N       &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH             &none
+                                                 &kp LA(LC(LG(LSHIFT)))  &mo 3  &kp SPACE    &lt 1 ENTER  &kp ESCAPE    &kp TAB
             >;
         };
 
