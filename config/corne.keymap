@@ -104,7 +104,7 @@
 
         graveTilde {
             bindings = <&kp GRAVE>;
-            key-positions = <21 22>;
+            key-positions = <33 34>;
         };
     };
 
@@ -177,10 +177,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q                     &kp W  &kp E                   &kp R  &kp T        &kp Y        &kp U       &kp I      &kp O    &kp P                  &none
-&none  &kp A                     &kp S  &kp D                   &kp F  &kp G        &kp H        &kp J       &kp K      &kp L    &kp SEMICOLON          &none
-&none  &leftZShift LEFT_SHIFT Z  &kp X  &kp C                   &kp V  &kp B        &kp N        &kp M       &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH  &none
-                                        &kp LA(LC(LG(LSHIFT)))  &mo 3  &kp SPACE    &lt 1 ENTER  &kp ESCAPE  &kp TAB
+&none  &kp Q                     &kp W  &kp E                     &kp R  &kp T        &kp Y        &kp U       &kp I      &kp O    &kp P                  &none
+&none  &kp A                     &kp S  &kp D                     &kp F  &kp G        &kp H        &kp J       &kp K      &kp L    &kp SEMICOLON          &none
+&none  &leftZShift LEFT_SHIFT Z  &kp X  &kp C                     &kp V  &kp B        &kp N        &kp M       &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH  &none
+                                        &kp LA(LG(LEFT_CONTROL))  &mo 3  &kp SPACE    &lt 1 ENTER  &kp ESCAPE  &kp TAB
             >;
         };
 
@@ -192,10 +192,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &none            &none         &none         &none         &none           &none         &none          &none         &none                 &none                  &none
-&none  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9          &kp NUMBER_0           &trans
-&none  &kp EXCLAMATION  &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT     &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-                                      &none         &none         &kp SPACE       &kp RET       &none          &none
+&none  &none            &none         &none                     &none         &none           &none         &none          &none         &none                 &none                  &none
+&none  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3              &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9          &kp NUMBER_0           &trans
+&none  &kp EXCLAMATION  &kp AT        &kp HASH                  &kp DOLLAR    &kp PERCENT     &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+                                      &kp LA(LG(LEFT_CONTROL))  &none         &kp SPACE       &kp RET       &none          &none
             >;
         };
 
